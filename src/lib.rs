@@ -13,6 +13,7 @@
 //! assert_eq!(Some("www.example.com"), parts.host);
 //! assert_eq!(Some("en-US/page/sub/"), parts.path);
 //! assert_eq!(Some("pre=2&foo=bar"), parts.search);
+//! assert_eq!(2, parts.params.len());
 //! assert_eq!(("pre", "2"), parts.params[0]);
 //! assert_eq!(("foo", "bar"), parts.params[1]);
 //! assert_eq!(Some("fuzz"), parts.fragment);
@@ -132,6 +133,7 @@ mod tests {
         assert_eq!(Some("www.example.com"), parts.host);
         assert_eq!(Some("en-US/page/sub/"), parts.path);
         assert_eq!(Some("pre=2&foo=bar"), parts.search);
+        assert_eq!(2, parts.params.len());
         assert_eq!(("pre", "2"), parts.params[0]);
         assert_eq!(("foo", "bar"), parts.params[1]);
         assert_eq!(Some("fuzz"), parts.fragment);
@@ -211,6 +213,7 @@ mod tests {
         assert_eq!(Some("www.example.com"), parts.host);
         assert_eq!(Some("en-US/page/sub/"), parts.path);
         assert_eq!(Some("pre=2&foo=bar"), parts.search);
+        assert_eq!(2, parts.params.len());
         assert_eq!(("pre", "2"), parts.params[0]);
         assert_eq!(("foo", "bar"), parts.params[1]);
         assert_eq!(Some("fuzz"), parts.fragment);
