@@ -14,6 +14,8 @@
 //! assert_eq!(Some("en-US/page/sub/"), parts.path);
 //! assert_eq!(Some("pre=2&foo=bar"), parts.search);
 //! assert_eq!(Some("fuzz"), parts.fragment);
+//! assert_eq!(("pre", "2"), parts.params[0]);
+//! assert_eq!(("foo", "bar"), parts.params[1]);
 //! ```
 
 mod utils;
