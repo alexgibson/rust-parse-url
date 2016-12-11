@@ -1,0 +1,4 @@
+[package]
+name = "parse_url"
+version = "0.1.0"
+authors = ["alexgibson <alxgbsn@gmail.com>"]
